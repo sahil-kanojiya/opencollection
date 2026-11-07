@@ -1,0 +1,10 @@
+﻿name: Health Check
+method: GET
+url: "{{baseUrl}}/actuator/health"
+headers:
+  - name: Accept
+    value: application/json
+tests:
+  - name: Status code is 200
+    assert:
+      res.status: eq 200

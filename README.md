@@ -1,33 +1,26 @@
-﻿# API Collections
+﻿# OpenCollection API Suite
 
-A centralized, Git-versioned repository of API requests, environments, and automated test collections built with [Bruno](https://www.usebruno.com/).
+This repository stores API collections, requests, tests, and environments adhering to the **OpenCollection YAML specification**, natively supported by [Bruno](https://www.usebruno.com/).
 
-## ðŸ“ Repository Structure
+## ðŸ“ Structure
 
 `	ext
-api-collections/
-â”œâ”€â”€ bruno.json                  # Collection definition
+opencollection/
+â”œâ”€â”€ opencollection.yml          # OpenCollection root specification
+â”œâ”€â”€ bruno.json                  # Bruno configuration
 â”œâ”€â”€ environments/
-â”‚   â”œâ”€â”€ Local.bru              # Default local variables (localhost:8080)
-â”‚   â”œâ”€â”€ Dev.bru                # Dev environment variables
-â”‚   â””â”€â”€ *.env                  # Secret variables (gitignored)
-â”œâ”€â”€ job-portal/                 # Job Portal Microservices requests
-â”‚   â”œâ”€â”€ folder.bru
-â”‚   â””â”€â”€ health-check.bru
-â”œâ”€â”€ hotel-booking/              # Hotel Booking Microservices requests
-â”œâ”€â”€ book-management/           # Book Management API requests
-â””â”€â”€ nexora/                     # Nexora communications platform requests
+â”‚   â”œâ”€â”€ local.yml              # Local environment variables
+â”‚   â”œâ”€â”€ dev.yml                # Dev environment variables
+â”‚   â””â”€â”€ *.secret.yml           # Secret variables (gitignored)
+â”œâ”€â”€ job-portal/                 # Job Portal requests (.yml)
+â”œâ”€â”€ hotel-booking/              # Hotel Booking requests (.yml)
+â”œâ”€â”€ book-management/           # Book Management requests (.yml)
+â””â”€â”€ nexora/                     # Nexora communications platform requests (.yml)
 `
 
-## ðŸš€ Getting Started with Bruno
+## ðŸš€ Opening in Bruno
 
 1. Open **Bruno Desktop**.
 2. Click **Open Collection**.
-3. Select this folder: `D:\my-projects\api-collections`.
-4. In the top-right environment dropdown, select **Local** or **Dev**.
-5. Run your requests!
-
-## ðŸ”’ Secret Management
-
-- Non-sensitive variables are committed in `environments/<EnvName>.bru`.
-- Secrets (tokens, API keys, passwords) should be marked as **Secret** in Bruno, which places them into `environments/<EnvName>.env` (automatically protected by `.gitignore`).
+3. Select `D:\my-projects\opencollection`.
+4. Choose your environment (**Local** / **Dev**) and run your requests!

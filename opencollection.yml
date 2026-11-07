@@ -1,0 +1,5 @@
+﻿opencollection: 1.0.0
+info:
+  name: OpenCollection API Suite
+  version: 1.0.0
+  description: Centralized API collection conforming to the OpenCollection YAML specification for Bruno and modern API clients.

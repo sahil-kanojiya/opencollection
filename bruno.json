@@ -3,7 +3,8 @@
                    "node_modules",
                    ".git"
                ],
-    "name":  "API Collections",
+    "format":  "opencollection",
+    "name":  "OpenCollection API Suite",
     "version":  "1",
     "type":  "collection"
 }

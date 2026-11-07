@@ -1,14 +1,10 @@
-﻿# Bruno environment secrets
-environments/*.env
+﻿# Secret environment files
+environments/*.env.yml
+environments/*.secret.yml
 *.env
-*.env.local
 
-# Operating System Files
+# System & IDE files
 .DS_Store
 Thumbs.db
-
-# Editor configurations
 .idea/
 .vscode/
-*.swp
-*.bak
