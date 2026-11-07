@@ -1,10 +1,27 @@
-﻿name: Health Check
-method: GET
-url: "{{baseUrl}}/actuator/health"
-headers:
-  - name: Accept
-    value: application/json
-tests:
-  - name: Status code is 200
-    assert:
-      res.status: eq 200
+﻿info:
+  name: Health Check
+  type: http
+  seq: 1
+  tags:
+    - health
+
+http:
+  method: GET
+  url: "{{baseUrl}}:8080/actuator/health"
+  headers:
+    - name: Accept
+      value: application/json
+  auth: inherit
+
+runtime:
+  assertions:
+    - expression: res.status
+      operator: eq
+      value: "200"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

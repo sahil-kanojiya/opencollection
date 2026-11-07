@@ -1,2 +1,10 @@
-﻿name: book-management
-description: API endpoints and integration tests for book-management
+﻿info:
+  name: Book Management API
+  type: folder
+  seq: 3
+
+docs:
+  type: text/markdown
+  content: |-
+    ### Book Management API
+    API endpoints and integration tests for book-management.

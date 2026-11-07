@@ -1,2 +1,10 @@
-﻿name: hotel-booking
-description: API endpoints and integration tests for hotel-booking
+﻿info:
+  name: Hotel Booking Microservices
+  type: folder
+  seq: 2
+
+docs:
+  type: text/markdown
+  content: |-
+    ### Hotel Booking Microservices
+    API endpoints and integration tests for hotel-booking.

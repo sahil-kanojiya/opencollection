@@ -1,2 +1,10 @@
-﻿name: nexora
-description: API endpoints and integration tests for nexora
+﻿info:
+  name: Nexora Platform API
+  type: folder
+  seq: 4
+
+docs:
+  type: text/markdown
+  content: |-
+    ### Nexora Platform API
+    API endpoints and integration tests for nexora.
